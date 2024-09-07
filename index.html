@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFC Shop - Giochi, App e Software</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .header {
+            background-color: #000;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            color: #ff6600;
+            margin: 0;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        .contact-info span {
+            margin-right: 20px;
+            color: #ff6600;
+        }
+        .discord-button {
+            background-color: #7289da;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .nav {
+            background-color: #ff6600;
+            padding: 10px 0;
+        }
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            margin: 0 15px;
+        }
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .main-content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            color: #ff6600;
+            border-bottom: 2px solid #ff6600;
+            padding-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background-color: #333;
+            border: 1px solid #ff6600;
+            border-radius: 5px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product h3 {
+            color: #ff6600;
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 10px 0;
+        }
+        .buy-info {
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+            color: #ff6600;
+        }
+        .buy-info + .discord-button {
+            display: block;
+            margin: 10px auto;
+            text-align: center;
+        }
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/attachments/1237856268358520862/1276580783234224292/GFC_SHOP1.png?ex=66dd29c0&is=66dbd840&hm=23d43a2621db1ee97f7d1728c8c87295647043ae3ea9cd283b385d57c061cf1d&" alt="GFC Shop Logo">
+            <h1>GFC Store</h1>
+        </div>
+        <div class="contact-info">
+            <span>graphicshop24@gmail.com</span>
+            <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href=" https://gfcshopsite.github.io/graphicandfivem/ ">GFC Shop</a></li>
+            <li><a href="#">GFC Store</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <section class="category">
+            <h2>Giochi</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Action Game">
+                    <h3>Action Adventure</h3>
+                    <p>Emozionante gioco d'azione con grafica mozzafiato.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Strategy Game">
+                    <h3>Strategy Master</h3>
+                    <p>Gestisci il tuo impero in questo gioco di strategia.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="RPG Game">
+                    <h3>Epic Quest RPG</h3>
+                    <p>Immergiti in un mondo fantasy con questo RPG epico.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Racing Game">
+                    <h3>Turbo Racing</h3>
+                    <p>Sfreccia in pista con questo adrenalinico gioco di corse.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>App</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Productivity App">
+                    <h3>TaskMaster Pro</h3>
+                    <p>Aumenta la tua produttività con questa app intuitiva.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Fitness App">
+                    <h3>FitTrack</h3>
+                    <p>Monitora i tuoi allenamenti e la tua dieta.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Language Learning App">
+                    <h3>LinguaLearn</h3>
+                    <p>Impara nuove lingue in modo divertente e interattivo.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+                <div class="product">
+                    <img src="https://cassanotariato.it/immagini/immagini49.jpg" alt="Meditation App">
+                    <h3>ZenMind</h3>
+                    <p>Trova la tua pace interiore con questa app di meditazione.</p>
+                    <p class="buy-info">Per acquistare, entra nel nostro Discord</p>
+                    <button class="discord-button" onclick="window.open('https://discord.gg/p9wBbNHz9B')">Entra su Discord</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GFC Shop. Tutti i diritti riservati.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/gfcshop.official?igsh=MTdvcnAzcDE5ZjRtdA%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/company/graphicshop24/?viewAsMember=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.tiktok.com/@gfcshopofficial?_t=8p7jKXGReSn&_r=1" target="_blank" rel="noopener noreferrer">TikTok</a>
+            <a href="https://discord.gg/p9wBbNHz9B" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://www.facebook.com/profile.php?id=61558006536531" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://t.me/gfcshopgruppo" target="_blank" rel="noopener noreferrer">Telegram</a>
+        </div>
+    </footer>
+
+      <!--Start of Tawk.to Script-->
+   <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/66d984fdea492f34bc0df694/1i70quvtk';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+   
+   
+ 
